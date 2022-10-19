@@ -9,8 +9,8 @@ const Header = () => {
 
     const handleSignOut = () => {
         logOut()
-            .then(() => {})
-            .catch(err => alert(err))
+            // .then(() => {})
+            // .catch(err => alert(err))
     }
     return (
         <nav className='header'>

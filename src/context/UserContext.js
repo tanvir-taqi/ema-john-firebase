@@ -32,7 +32,6 @@ const UserContext = ({children}) => {
         const unsSubscribe = onAuthStateChanged(auth, currentUser =>{
             if(currentUser){
                 setUser(currentUser)
-
             }
             else{
                 return

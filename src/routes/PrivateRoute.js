@@ -8,7 +8,7 @@ const PrivateRoute = ({children}) => {
     const location = useLocation()
 
     if(user && user.uid){
-       return {children}
+       return children
     }else{
         return <Navigate to='/login' state={{from: location}} replace></Navigate>
     }
